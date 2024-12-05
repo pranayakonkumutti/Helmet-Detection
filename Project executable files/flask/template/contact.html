@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - GuardianEye</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: antiquewhite;
+        }
+        .header, .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+        }
+        .header a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .header a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            text-align: center;
+            margin: 50px auto;
+        }
+        .contact-info {
+            margin-top: 20px;
+            line-height: 1.6;
+        }
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            border-radius: 50%;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .back-to-top:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>GuardianEye</h1>
+        <nav>
+            <a href="{{ url_for('home')}}">Home</a>
+            <a href="{{ url_for('about')}}">About</a>
+            <a href="{{ url_for('contact')}}" class="active">Contact</a>
+            
+        </nav>
+    </div>
+
+    <div class="content">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <p>A108 Adam Street</p>
+            <p>Gachibowli, HYD 500036</p>
+            <p>Telangana</p>
+            <p><strong>Phone:</strong> +91 7337894563</p>
+            <p><strong>Email:</strong> info@thesmartbridge.com</p>
+        </div>
+    </div>
+
+    <a href="#top" class="back-to-top">&#8593;</a>
+
+    <div class="footer">
+        <p>127.0.0.1:5000</p>
+    </div>
+
+</body>
+</html>

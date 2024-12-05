@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuardianEye - About Us</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='style1.css')}}">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <h1>GuardianEye</h1>
+            <nav>
+                <ul>
+                    <li><a href="{{ url_for('home')}}">Home</a></li>
+                    <li><a href="{{ url_for('about')}}" class="active">About</a></li>
+                    <li><a href="{{ url_for('contact')}}">Contact</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section class="about">
+            <div class="content">
+                <h2>About us</h2>
+                <p>
+                    <center>Helmet detection using YOLOv8 likely involves the application of the YOLO version 8 (YOLOv8) object detection algorithm to identify and locate helmets in video frames. YOLOv8 is an evolution of the YOLO algorithm series, known for its real-time object detection capabilities.</center>
+                </p>
+                <h3>Key Features</h3>
+                <ul>
+                    <li>
+                        <h4>YOLOv8 Architecture:</h4>
+                        <p>The use of YOLOv11 implies a state-of-the-art object detection algorithm, known for its accuracy and efficiency.</p>
+                    </li>
+                    <li>
+                        <h4>Real-Time Detection:</h4>
+                        <p>YOLOv11 is designed for real-time object detection, making it suitable for applications where quick and accurate identification is crucial.</p>
+                    </li>
+                    <li>
+                        <h4>Helmet Detection Model:</h4>
+                        <p>The system is trained specifically to recognize and detect helmets. This involves training the model on a dataset that includes various images of helmets from different angles, lighting conditions, and environments.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="image-display">
+            <img src="../static/Images/img1.jpeg" alt="Helmet Detection Demo">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 GuardianEye. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
